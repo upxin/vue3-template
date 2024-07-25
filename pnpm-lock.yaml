@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@vue/repl':
+        specifier: ^4.3.1
+        version: 4.3.1
       '@vueuse/core':
         specifier: ^10.11.0
         version: 10.11.0(vue@3.4.34(typescript@5.4.5))
@@ -789,6 +792,9 @@ packages:
 
   '@vue/reactivity@3.4.34':
     resolution: {integrity: sha1-OI7FL1Wj++b5My1dmTVnoYhv3HY=, tarball: http://registry.npm.release.ctripcorp.com/@vue/reactivity/download/@vue/reactivity-3.4.34.tgz}
+
+  '@vue/repl@4.3.1':
+    resolution: {integrity: sha1-mc17ofvmWTJU/wjoZMmhQS9OlBg=, tarball: http://registry.npm.release.ctripcorp.com/@vue/repl/download/@vue/repl-4.3.1.tgz}
 
   '@vue/runtime-core@3.4.34':
     resolution: {integrity: sha1-R9KriceW1wEr4X4rvsQM/wATF9c=, tarball: http://registry.npm.release.ctripcorp.com/@vue/runtime-core/download/@vue/runtime-core-3.4.34.tgz}
@@ -2417,6 +2423,8 @@ snapshots:
   '@vue/reactivity@3.4.34':
     dependencies:
       '@vue/shared': 3.4.34
+
+  '@vue/repl@4.3.1': {}
 
   '@vue/runtime-core@3.4.34':
     dependencies:
