@@ -1,7 +1,7 @@
-import { defineConfig, presetUno, presetAttributify, presetIcons } from 'unocss'
+import { defineConfig, presetUno, presetAttributify } from 'unocss'
 import presetWebFonts from '@unocss/preset-web-fonts'
 import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local'
-
+import presetIcons from '@unocss/preset-icons/browser'
 
 export default defineConfig({
   shortcuts: [
@@ -31,17 +31,15 @@ export default defineConfig({
       processors: createLocalFontProcessor(),
     }),
     presetIcons({
-      // 在这里配置你需要使用的图标库
-      collections: {
-        fluent: () => import('@vicons/fluent').then(i => i.default),
-        ionicons4: () => import('@vicons/ionicons4').then(i => i.default),
-        ionicons5: () => import('@vicons/ionicons5').then(i => i.default),
-        antd: () => import('@vicons/antd').then(i => i.default),
-        material: () => import('@vicons/material').then(i => i.default),
-        fa: () => import('@vicons/fa').then(i => i.default),
-        tabler: () => import('@vicons/tabler').then(i => i.default),
-        carbon: () => import('@vicons/carbon').then(i => i.default),
+      extraProperties: {
+        'display': 'inline-block',
+        'vertical-align': 'middle',
       },
+      // collections: {
+      //   carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default),
+      //   mdi: () => import('@iconify-json/mdi/icons.json').then(i => i.default),
+      //   logos: () => import('@iconify-json/logos/icons.json').then(i => i.default),
+      // }
     }),
   ],
 })

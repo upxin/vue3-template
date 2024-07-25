@@ -1,6 +1,7 @@
 <template>
   <n-menu mode="horizontal" :options="menuOptions" responsive />
   <n-button type="primary" @click="toast">你好</n-button>
+  <div bg-amber h-20px></div>
 </template>
 
 <script lang="ts" setup>
@@ -8,7 +9,6 @@ import type { Component } from "vue";
 import { NIcon } from "naive-ui";
 import type { MenuOption } from "naive-ui";
 import { BookOutline as BookIcon } from "@vicons/ionicons5";
-
 const message = useMessage();
 
 function renderIcon(icon: Component) {
