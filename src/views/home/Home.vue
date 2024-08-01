@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { Component } from 'vue';
-import { NIcon } from 'naive-ui';
 import type { MenuOption } from 'naive-ui';
+import { NIcon } from 'naive-ui';
 import { BookOutline as BookIcon } from '@vicons/ionicons5';
 
 const message = useMessage();
